@@ -1,0 +1,7 @@
+E:\Projects\Rose\mymouse\bin\Debug\mymouse.exe
+E:\Projects\Rose\mymouse\bin\Debug\mymouse.pdb
+E:\Projects\Rose\mymouse\obj\Debug\mymouse.csprojResolveAssemblyReference.cache
+E:\Projects\Rose\mymouse\obj\Debug\mymouse.Properties.Resources.resources
+E:\Projects\Rose\mymouse\obj\Debug\mymouse.csproj.GenerateResource.Cache
+E:\Projects\Rose\mymouse\obj\Debug\mymouse.exe
+E:\Projects\Rose\mymouse\obj\Debug\mymouse.pdb
