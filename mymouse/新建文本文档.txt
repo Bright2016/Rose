@@ -1,0 +1,20 @@
+[DllImport("user32.dll")]//取设备场景
+2    private static extern IntPtr GetDC(IntPtr hwnd);//返回设备场景句柄
+3 
+4    [DllImport("gdi32.dll")]//取指定点颜色
+5    private static extern int GetPixel(IntPtr hdc, Point p);
+
+
+Timer tim = new Timer();
+   tim.Interval = 1;
+   tim.Tick += delegate
+   {
+       Point p = new Point(MousePosition.X, MousePosition.Y);//取置顶点坐标
+       IntPtr hdc = GetDC(new IntPtr(0));//取到设备场景(0就是全屏的设备场景)
+       int c = GetPixel(hdc, p);//取指定点颜色
+       int r = (c & 0xFF);//转换R
+       int g = (c & 0xFF00) / 256;//转换G
+       int b = (c & 0xFF0000) / 65536;//转换B
+       pictureBox1.BackColor = Color.FromArgb(r, g, b);
+   };
+   tim.Start();
